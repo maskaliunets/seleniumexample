@@ -27,8 +27,8 @@ public class AppTest {
 
     @Before
     public void init() {
-        // System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
-//        ChromeDriverService service = new ChromeDriverService()
+//        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+//        ChromeDriverService service = new ChromeDriverService();
         ChromeOptions cho = new ChromeOptions();
         cho.addArguments("headless");
         driver = new ChromeDriver(cho);
@@ -252,6 +252,4 @@ public class AppTest {
 
         // here in code, we are 100% sure, that button is visible
     }
-
-
 }
