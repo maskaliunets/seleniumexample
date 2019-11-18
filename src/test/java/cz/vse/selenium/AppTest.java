@@ -27,6 +27,10 @@ public class AppTest {
 
     @Before
     public void init() {
+//        zakomentujte radek // System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+//        aby se Selenium nesnazilo pouzit .exe driver, který na linuxu nemuze spustit,
+//        v .travis.yml je naskriptovano, aby se downloadoval driver pro linux
+//                (akorat pri teto uprave vam to nepujde spustit lokalne, muselo by se to ošéfovat ....rozlišit prostředí např. "lokál" a "travis" s jinou konfigurací)
 //        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
 //        ChromeDriverService service = new ChromeDriverService();
         ChromeOptions cho = new ChromeOptions();
